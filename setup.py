@@ -45,7 +45,7 @@ setup(
         "Topic :: Software Development :: Build Tools",
         "License :: OSI Approved :: BSD License",
     ],
-    entry_points={"console_scripts": ["fusesoc = fusesoc.main:main"]},
+    entry_points={"console_scripts": ["fusesoc=fusesoc.main:main"]},
     setup_requires=[
         "setuptools_scm < 7.0; python_version<'3.7'",
         "setuptools_scm; python_version>='3.7'",
