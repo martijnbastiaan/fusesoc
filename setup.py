@@ -13,7 +13,7 @@ def read(fname):
 import time
 
 now = int(time.time())
-__version__=f"2.3dev{now}",
+__version__=f"2.3dev{now}"
 
 setup(
     name="fusesoc",
