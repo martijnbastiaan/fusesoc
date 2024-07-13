@@ -14,6 +14,7 @@ def read(fname):
 setup(
     name="fusesoc",
     packages=["fusesoc", "fusesoc.capi2", "fusesoc.provider", "fusesoc.parser"],
+    version="2.3dev123",
     use_scm_version={
         "relative_to": __file__,
         "write_to": "fusesoc/version.py",
