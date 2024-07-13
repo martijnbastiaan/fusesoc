@@ -18,10 +18,6 @@ setup(
     name="fusesoc",
     packages=["fusesoc"],
     version=f"2.3dev{now}",
-    use_scm_version={
-        "relative_to": __file__,
-        "write_to": "fusesoc/version.py",
-    },
     author="Olof Kindgren",
     author_email="olof.kindgren@gmail.com",
     description=(
@@ -29,39 +25,11 @@ setup(
         "(Hardware Description Language) code."
     ),
     license="BSD-2-Clause",
-    keywords=[
-        "VHDL",
-        "verilog",
-        "hdl",
-        "rtl",
-        "synthesis",
-        "FPGA",
-        "simulation",
-        "Xilinx",
-        "Altera",
-    ],
     url="https://github.com/olofk/fusesoc",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    classifiers=[
-        "Development Status :: 5 - Production/Stable",
-        "Topic :: Utilities",
-        "Topic :: Software Development :: Build Tools",
-        "License :: OSI Approved :: BSD License",
-    ],
     entry_points={"console_scripts": ["fusesoc = fusesoc.main:main"]},
-    setup_requires=[
-        "setuptools_scm < 7.0; python_version<'3.7'",
-        "setuptools_scm; python_version>='3.7'",
-    ],
-    install_requires=[
-        "edalize>=0.4.1",
-        "pyparsing>=2.3.1",
-        "pyyaml>=6.0",
-        "simplesat>=0.8.0",
-        "fastjsonschema",
-        "jsonschema2md",
-    ],
+
     # Supported Python versions: 3.6+
     python_requires=">=3.6",
 )
