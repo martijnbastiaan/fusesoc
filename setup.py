@@ -13,12 +13,13 @@ def read(fname):
 import time
 
 now = int(time.time())
+__version__=f"2.3dev{now}",
 
 setup(
     name="fusesoc",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
-    version=f"2.3dev{now}",
+    version=__version__,
     author="Olof Kindgren",
     author_email="olof.kindgren@gmail.com",
     description=(
