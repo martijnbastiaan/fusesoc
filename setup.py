@@ -16,7 +16,7 @@ now = int(time.time())
 
 setup(
     name="fusesoc",
-    packages=["fusesoc", "fusesoc.capi2", "fusesoc.provider", "fusesoc.parser"],
+    packages=["fusesoc"],
     version=f"2.3dev{now}",
     use_scm_version={
         "relative_to": __file__,
