@@ -10,11 +10,14 @@ from setuptools import setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+import time
+
+now = int(time.time())
 
 setup(
     name="fusesoc",
     packages=["fusesoc", "fusesoc.capi2", "fusesoc.provider", "fusesoc.parser"],
-    version="2.3dev123",
+    version=f"2.3dev{now}",
     use_scm_version={
         "relative_to": __file__,
         "write_to": "fusesoc/version.py",
@@ -60,5 +63,5 @@ setup(
         "jsonschema2md",
     ],
     # Supported Python versions: 3.6+
-    python_requires=">=3.6, <4",
+    python_requires=">=3.6",
 )
