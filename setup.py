@@ -16,8 +16,8 @@ now = int(time.time())
 
 setup(
     name="fusesoc",
-    packages=find_packages(where="."),
-    package_dir={"": "."},
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     version=f"2.3dev{now}",
     author="Olof Kindgren",
     author_email="olof.kindgren@gmail.com",
