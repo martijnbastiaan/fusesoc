@@ -29,7 +29,7 @@ setup(
     url="https://github.com/olofk/fusesoc",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    entry_points={"console_scripts": ["fusesoc = fusesoc.main:main"]},
+    entry_points={"console_scripts": ["fusesoc-main=fusesoc.main:main"]},
 
     # Supported Python versions: 3.6+
     python_requires=">=3.6",
