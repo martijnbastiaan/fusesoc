@@ -4,7 +4,7 @@
 
 import os
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def read(fname):
@@ -16,7 +16,8 @@ now = int(time.time())
 
 setup(
     name="fusesoc",
-    packages=["fusesoc"],
+    packages=find_packages(where="."),
+    package_dir={"": "."},
     version=f"2.3dev{now}",
     author="Olof Kindgren",
     author_email="olof.kindgren@gmail.com",
